@@ -147,9 +147,7 @@ Pas de **filtrage collaboratif** (pas de préférences utilisateur ni de grades 
 ## GitHub — avant un `push`
 
 - Inclure **`data/books.csv`** si vous voulez un projet **fonctionnel sans relancer le script** après clone.
-- Ne **pas** versionner `.venv/`.
+- Ne **pas** versionner `.ven v/`.
 - Indiquez dans le README / rapport que **`fetch_books_ol.py`** permet de **réparer** ou **réinitialiser** le jeu de données.
 
 ---
-
-*Les couvertures sont servies par les serveurs publics d’**Open Library** ; respectez leurs conditions d’usage.*
