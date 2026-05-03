@@ -12,12 +12,12 @@ import streamlit as st
 from recommender import LivreRecommender
 
 # Incrémenter si la classe LivreRecommender change (invalide le cache Streamlit).
-_MOTEUR_CODE_VERSION = 2
+_MOTEUR_CODE_VERSION = 3
 _DATA_CSV = Path(__file__).resolve().parent / "data" / "books.csv"
 
 PAGE_SIZE = 20
 COLS_GRID = 5
-NB_VOISINS = 8  # nombre de suggestions fixe (non réglable par l'utilisateur)
+NB_VOISINS = 5  # nombre de suggestions fixe (non réglable par l'utilisateur)
 
 NAV_LABELS = ("Accueil", "Mes bouquins", "Ma sélection")
 

@@ -1,1 +1,201 @@
-id,titre,auteur,genre,annee,description,couverture_url,nb_references
+id,titre,auteur,genre,annee,description,couverture_url
+1,Pride and Prejudice,Jane Austen,Fiction,1813,,https://covers.openlibrary.org/b/id/14348537-M.jpg
+2,Alice's Adventures in Wonderland,Lewis Carroll,Fiction,1865,,https://covers.openlibrary.org/b/id/10527843-M.jpg
+3,A Christmas Carol,Charles Dickens,Fiction,1843,,https://covers.openlibrary.org/b/id/12875748-M.jpg
+4,The Picture of Dorian Gray,Oscar Wilde,Fiction,1890,,https://covers.openlibrary.org/b/id/14314858-M.jpg
+5,Wuthering Heights,Emily Brontë,Fiction,1846,,https://covers.openlibrary.org/b/id/12818862-M.jpg
+6,Adventures of Huckleberry Finn,Mark Twain,Fiction,1876,,https://covers.openlibrary.org/b/id/8157718-M.jpg
+7,Robinson Crusoe,"Daniel Defoe, J. J. Grandville, Petrus Borel, Les éditions du Rey",Fiction,1686,,https://covers.openlibrary.org/b/id/368541-M.jpg
+8,The Scarlet Letter,Nathaniel Hawthorne,Fiction,1800,,https://covers.openlibrary.org/b/id/5654516-M.jpg
+9,Hamlet,William Shakespeare,Fiction,1603,,https://covers.openlibrary.org/b/id/8281954-M.jpg
+10,Emma,Jane Austen,Fiction,1815,,https://covers.openlibrary.org/b/id/9278312-M.jpg
+11,Oliver Twist,Charles Dickens,Fiction,1822,,https://covers.openlibrary.org/b/id/13300802-M.jpg
+12,Frankenstein or The Modern Prometheus,Mary Shelley,Fiction,1818,,https://covers.openlibrary.org/b/id/12356249-M.jpg
+13,Sense and Sensibility,Jane Austen,Fiction,1811,,https://covers.openlibrary.org/b/id/9278292-M.jpg
+14,A Tale of Two Cities,Charles Dickens,Fiction,1800,,https://covers.openlibrary.org/b/id/13301713-M.jpg
+15,The Wonderful Wizard of Oz,L. Frank Baum,Fiction,1899,,https://covers.openlibrary.org/b/id/552443-M.jpg
+16,Treasure Island,Robert Louis Stevenson,Fiction,1880,,https://covers.openlibrary.org/b/id/13859660-M.jpg
+17,Little Women,Louisa May Alcott,Romance,1848,,https://covers.openlibrary.org/b/id/8775559-M.jpg
+18,Анна Каренина,Лев Толстой,Romance,1876,,https://covers.openlibrary.org/b/id/2560652-M.jpg
+19,Jane Eyre,Charlotte Brontë,Romance,1847,,https://covers.openlibrary.org/b/id/8235363-M.jpg
+20,Northanger Abbey,Jane Austen,Romance,1818,,https://covers.openlibrary.org/b/id/12567961-M.jpg
+21,Ethan Frome,Edith Wharton,Romance,1910,,https://covers.openlibrary.org/b/id/8303480-M.jpg
+22,The Moonstone,Wilkie Collins,Romance,1800,,https://covers.openlibrary.org/b/id/8237041-M.jpg
+23,Le Comte de Monte Cristo,Alexandre Dumas,Romance,1830,,https://covers.openlibrary.org/b/id/14566393-M.jpg
+24,Riders of the Purple Sage,Zane Grey,Romance,1912,,https://covers.openlibrary.org/b/id/872066-M.jpg
+25,A Room with a View,E. M. Forster,Romance,1905,,https://covers.openlibrary.org/b/id/1748132-M.jpg
+26,Uncle Tom's Cabin,Harriet Beecher Stowe,Romance,1850,,https://covers.openlibrary.org/b/id/12728198-M.jpg
+27,Women in Love,D. H. Lawrence,Romance,1877,,https://covers.openlibrary.org/b/id/13140934-M.jpg
+28,Heart of Darkness,Joseph Conrad,Romance,1899,,https://covers.openlibrary.org/b/id/12307847-M.jpg
+29,She,H. Rider Haggard,Romance,1886,,https://covers.openlibrary.org/b/id/295537-M.jpg
+30,Howards End,E. M. Forster,Romance,1910,,https://covers.openlibrary.org/b/id/8235207-M.jpg
+31,This Side of Paradise,F. Scott Fitzgerald,Romance,1920,,https://covers.openlibrary.org/b/id/8243609-M.jpg
+32,Cranford,Elizabeth Cleghorn Gaskell,Romance,1853,,https://covers.openlibrary.org/b/id/5188445-M.jpg
+33,The Time Machine,H. G. Wells,Science Fiction,1895,,https://covers.openlibrary.org/b/id/9009316-M.jpg
+34,The Lost World,Arthur Conan Doyle,Science Fiction,1900,,https://covers.openlibrary.org/b/id/8231444-M.jpg
+35,Dracula,Bram Stoker,Science Fiction,1897,,https://covers.openlibrary.org/b/id/12216503-M.jpg
+36,Brave New World,Aldous Huxley,Science Fiction,1932,,https://covers.openlibrary.org/b/id/8231823-M.jpg
+37,The Jewel of Seven Stars,Bram Stoker,Science Fiction,1902,,https://covers.openlibrary.org/b/id/2760301-M.jpg
+38,The Iron Heel,Jack London,Science Fiction,1907,,https://covers.openlibrary.org/b/id/8243314-M.jpg
+39,Flatland,Edwin Abbott Abbott,Science Fiction,1884,,https://covers.openlibrary.org/b/id/10069547-M.jpg
+40,The Invisible Man,H. G. Wells,Science Fiction,0,,https://covers.openlibrary.org/b/id/6419199-M.jpg
+41,Nineteen Eighty-Four,George Orwell,Science Fiction,1949,,https://covers.openlibrary.org/b/id/9267242-M.jpg
+42,The Princess and Curdie,George MacDonald,Science Fiction,1832,,https://covers.openlibrary.org/b/id/14357835-M.jpg
+43,The War of the Worlds,H. G. Wells,Science Fiction,0,,https://covers.openlibrary.org/b/id/36314-M.jpg
+44,A Princess of Mars,Edgar Rice Burroughs,Science Fiction,1912,,https://covers.openlibrary.org/b/id/207226-M.jpg
+45,The Napoleon of Notting Hill,Gilbert Keith Chesterton,Science Fiction,1904,,https://covers.openlibrary.org/b/id/6980094-M.jpg
+46,The Last Man,Mary Shelley,Science Fiction,1826,,https://covers.openlibrary.org/b/id/882662-M.jpg
+47,Le Tour du Monde en Quatre-Vingts Jours,Jules Verne,Science Fiction,1872,,https://covers.openlibrary.org/b/id/6976035-M.jpg
+48,The warlord of Mars #3,Edgar Rice Burroughs,Science Fiction,1914,,https://covers.openlibrary.org/b/id/207141-M.jpg
+49,Gulliver's Travels,Jonathan Swift,Fantasy,1726,,https://covers.openlibrary.org/b/id/12717083-M.jpg
+50,A Midsummer Night's Dream,William Shakespeare,Fantasy,1600,,https://covers.openlibrary.org/b/id/7205924-M.jpg
+51,The Prince,Niccolò Machiavelli,Fantasy,1515,,https://covers.openlibrary.org/b/id/12726168-M.jpg
+52,Through the Looking-Glass,Lewis Carroll,Fantasy,1865,,https://covers.openlibrary.org/b/id/11272464-M.jpg
+53,The Wind in the Willows,Kenneth Grahame,Fantasy,1908,,https://covers.openlibrary.org/b/id/13335427-M.jpg
+54,Five Children and It,Edith Nesbit,Fantasy,1905,,https://covers.openlibrary.org/b/id/28174-M.jpg
+55,The Princess and the Goblin,George MacDonald,Fantasy,1872,,https://covers.openlibrary.org/b/id/14363454-M.jpg
+56,The Marvelous Land of Oz,L. Frank Baum,Fantasy,1904,,https://covers.openlibrary.org/b/id/12648656-M.jpg
+57,Ozma of Oz,L. Frank Baum,Fantasy,1907,,https://covers.openlibrary.org/b/id/12648657-M.jpg
+58,Le petit prince,Antoine de Saint-Exupéry,Fantasy,1943,,https://covers.openlibrary.org/b/id/10708272-M.jpg
+59,The Emerald City of Oz,L. Frank Baum,Fantasy,1910,,https://covers.openlibrary.org/b/id/1473556-M.jpg
+60,Dorothy and the Wizard in Oz,L. Frank Baum,Fantasy,1908,,https://covers.openlibrary.org/b/id/12648659-M.jpg
+61,The Lost Princess of Oz,L. Frank Baum,Fantasy,1917,,https://covers.openlibrary.org/b/id/854819-M.jpg
+62,The Story of the Amulet,Edith Nesbit,Fantasy,1905,,https://covers.openlibrary.org/b/id/13241470-M.jpg
+63,The Complete Life and Adventures of Santa Claus,L. Frank Baum,Fantasy,1902,,https://covers.openlibrary.org/b/id/1979059-M.jpg
+64,Alice's Adventures in Wonderland / Through the Looking Glass,Lewis Carroll,Fantasy,1889,,https://covers.openlibrary.org/b/id/8595966-M.jpg
+65,The Secret Garden,Frances Hodgson Burnett,Mystery And Detective Stories,1911,,https://covers.openlibrary.org/b/id/12622062-M.jpg
+66,A Study in Scarlet,Arthur Conan Doyle,Mystery And Detective Stories,1887,,https://covers.openlibrary.org/b/id/13405534-M.jpg
+67,The Hound of the Baskervilles,Arthur Conan Doyle,Mystery And Detective Stories,1900,,https://covers.openlibrary.org/b/id/8063264-M.jpg
+68,The Adventures of Sherlock Holmes [12 stories],Arthur Conan Doyle,Mystery And Detective Stories,1892,,https://covers.openlibrary.org/b/id/6717853-M.jpg
+69,The Sign of Four,Arthur Conan Doyle,Mystery And Detective Stories,1889,,https://covers.openlibrary.org/b/id/9247987-M.jpg
+70,The Woman in White,"Wilkie Collins, William Collins",Mystery And Detective Stories,1859,,https://covers.openlibrary.org/b/id/4684227-M.jpg
+71,The Return of Sherlock Holmes,Arthur Conan Doyle,Mystery And Detective Stories,1903,,https://covers.openlibrary.org/b/id/9246467-M.jpg
+72,Memoirs of Sherlock Holmes [11 stories],Arthur Conan Doyle,Mystery And Detective Stories,1893,,https://covers.openlibrary.org/b/id/9246429-M.jpg
+73,The Strange Case of Dr. Jekyll and Mr. Hyde,Robert Louis Stevenson,Mystery And Detective Stories,1875,,https://covers.openlibrary.org/b/id/295773-M.jpg
+74,The Secret Agent,Joseph Conrad,Mystery And Detective Stories,1907,,https://covers.openlibrary.org/b/id/8239401-M.jpg
+75,The Case-Book of Sherlock Holmes,Arthur Conan Doyle,Mystery And Detective Stories,1927,,https://covers.openlibrary.org/b/id/8350410-M.jpg
+76,"Tom Sawyer, Detective",Mark Twain,Mystery And Detective Stories,1897,,https://covers.openlibrary.org/b/id/8923621-M.jpg
+77,The Old Man in the Corner,Emma Orczy,Mystery And Detective Stories,1908,,https://covers.openlibrary.org/b/id/5815381-M.jpg
+78,The Gold-Bug,Edgar Allan Poe,Mystery And Detective Stories,1845,,https://covers.openlibrary.org/b/id/11777143-M.jpg
+79,The A.B.C. Murders,Agatha Christie,Mystery And Detective Stories,1936,,https://covers.openlibrary.org/b/id/14573514-M.jpg
+80,The Purloined Letter,Edgar Allan Poe,Mystery And Detective Stories,1931,,https://covers.openlibrary.org/b/id/11674884-M.jpg
+81,The Great Gatsby,F. Scott Fitzgerald,Young Adult Fiction,1920,,https://covers.openlibrary.org/b/id/10590366-M.jpg
+82,King Solomon's Mines,H. Rider Haggard,Young Adult Fiction,1880,,https://covers.openlibrary.org/b/id/8665393-M.jpg
+83,The Hobbit,J.R.R. Tolkien,Young Adult Fiction,1937,,https://covers.openlibrary.org/b/id/14627509-M.jpg
+84,Vingt mille lieues sous les mers,Jules Verne,Young Adult Fiction,1870,,https://covers.openlibrary.org/b/id/6573517-M.jpg
+85,A Little Princess,Frances Hodgson Burnett,Young Adult Fiction,1905,,https://covers.openlibrary.org/b/id/2328315-M.jpg
+86,The Fellowship of the Ring,J.R.R. Tolkien,Young Adult Fiction,1954,,https://covers.openlibrary.org/b/id/14627060-M.jpg
+87,Charlie and the Chocolate Factory,Roald Dahl,Young Adult Fiction,1964,,https://covers.openlibrary.org/b/id/12459564-M.jpg
+88,What Katy Did Next (Best Loved Stories),"Susan Coolidge, Jessie Mcdermot",Young Adult Fiction,1886,,https://covers.openlibrary.org/b/id/1755209-M.jpg
+89,Northern Lights,Philip Pullman,Young Adult Fiction,1995,,https://covers.openlibrary.org/b/id/8747028-M.jpg
+90,The Hunger Games,Suzanne Collins,Young Adult Fiction,2008,,https://covers.openlibrary.org/b/id/12646537-M.jpg
+91,Twilight,Stephenie Meyer,Young Adult Fiction,2005,,https://covers.openlibrary.org/b/id/12641977-M.jpg
+92,Catching Fire,Suzanne Collins,Young Adult Fiction,2009,,https://covers.openlibrary.org/b/id/12646539-M.jpg
+93,Peer Gynt,Henrik Ibsen,Young Adult Fiction,1867,,https://covers.openlibrary.org/b/id/3324275-M.jpg
+94,The Book Thief,Markus Zusak,Young Adult Fiction,1998,,https://covers.openlibrary.org/b/id/8153054-M.jpg
+95,"Undine, eine Erzählung","Friedrich de la Motte-Fouqué, Friedrich Heinrich Kar La Motte-Fouqué, Friedrich de La Motte Fouqué",Young Adult Fiction,1845,,https://covers.openlibrary.org/b/id/5825705-M.jpg
+96,The Curious Incident of the Dog in the Night-Time,Mark Haddon,Young Adult Fiction,2002,,https://covers.openlibrary.org/b/id/7890719-M.jpg
+97,The Da Vinci Code,Dan Brown,Thrillers,2003,,https://covers.openlibrary.org/b/id/9255229-M.jpg
+98,Angels & Demons,Dan Brown,Thrillers,2000,,https://covers.openlibrary.org/b/id/11408459-M.jpg
+99,Casino Royale,Ian Fleming,Thrillers,1953,,https://covers.openlibrary.org/b/id/5540820-M.jpg
+100,"From Russia, with love",Ian Fleming,Thrillers,1957,,https://covers.openlibrary.org/b/id/109458-M.jpg
+101,Goldfinger,Ian Fleming,Thrillers,1958,,https://covers.openlibrary.org/b/id/109454-M.jpg
+102,Live and let die,Ian Fleming,Thrillers,1954,,https://covers.openlibrary.org/b/id/109570-M.jpg
+103,The Lost Symbol,Dan Brown,Thrillers,2009,,https://covers.openlibrary.org/b/id/8373389-M.jpg
+104,Doctor No,Ian Fleming,Thrillers,1958,,https://covers.openlibrary.org/b/id/6491664-M.jpg
+105,The Pillars of the Earth,Ken Follett,Thrillers,1989,,https://covers.openlibrary.org/b/id/9269909-M.jpg
+106,Diamonds are Forever,Ian Fleming,Thrillers,1956,,https://covers.openlibrary.org/b/id/5540817-M.jpg
+107,The spy who loved me,Ian Fleming,Thrillers,1960,,https://covers.openlibrary.org/b/id/109573-M.jpg
+108,Misery,Stephen King,Thrillers,1978,,https://covers.openlibrary.org/b/id/8259296-M.jpg
+109,Moonraker,Ian Fleming,Thrillers,1955,,https://covers.openlibrary.org/b/id/6593911-M.jpg
+110,Deception Point,Dan Brown,Thrillers,2001,,https://covers.openlibrary.org/b/id/14553479-M.jpg
+111,It,Stephen King,Thrillers,1986,,https://covers.openlibrary.org/b/id/8569284-M.jpg
+112,The Gunslinger,Stephen King,Thrillers,1976,,https://covers.openlibrary.org/b/id/8396638-M.jpg
+113,Macbeth,William Shakespeare,Juvenile Fiction,1508,,https://covers.openlibrary.org/b/id/872432-M.jpg
+114,The Call of the Wild,Jack London,Juvenile Fiction,1903,,https://covers.openlibrary.org/b/id/12393037-M.jpg
+115,King Lear,William Shakespeare,Juvenile Fiction,1608,,https://covers.openlibrary.org/b/id/7420452-M.jpg
+116,Anne of Green Gables,Lucy Maud Montgomery,Juvenile Fiction,1908,,https://covers.openlibrary.org/b/id/14641084-M.jpg
+117,Julius Caesar,William Shakespeare,Juvenile Fiction,1656,,https://covers.openlibrary.org/b/id/7901303-M.jpg
+118,The Legend of Sleepy Hollow,Washington Irving,Juvenile Fiction,1820,,https://covers.openlibrary.org/b/id/8243083-M.jpg
+119,Captains Courageous,Rudyard Kipling,Juvenile Fiction,1896,,https://covers.openlibrary.org/b/id/12819857-M.jpg
+120,The Railway Children,Edith Nesbit,Juvenile Fiction,1900,,https://covers.openlibrary.org/b/id/13241123-M.jpg
+121,Kim,Rudyard Kipling,Juvenile Fiction,1901,,https://covers.openlibrary.org/b/id/1053011-M.jpg
+122,The Adventures of Tom Sawyer,Mark Twain,Juvenile Fiction,1817,,https://covers.openlibrary.org/b/id/12043351-M.jpg
+123,David Copperfield,Charles Dickens,Juvenile Fiction,1800,,https://covers.openlibrary.org/b/id/1048892-M.jpg
+124,Anne's House of Dreams,Lucy Maud Montgomery,Juvenile Fiction,1917,,https://covers.openlibrary.org/b/id/14640440-M.jpg
+125,Anne of Avonlea,Lucy Maud Montgomery,Juvenile Fiction,1909,,https://covers.openlibrary.org/b/id/14638062-M.jpg
+126,The Tempest,William Shakespeare,Juvenile Fiction,1611,,https://covers.openlibrary.org/b/id/8155661-M.jpg
+127,A Connecticut Yankee in King Arthur's Court,Mark Twain,Juvenile Fiction,1889,,https://covers.openlibrary.org/b/id/9168732-M.jpg
+128,Anne of the Island,Lucy Maud Montgomery,Juvenile Fiction,1915,,https://covers.openlibrary.org/b/id/14639028-M.jpg
+129,The Mayor of Casterbridge,Thomas Hardy,Horror Stories,1800,,https://covers.openlibrary.org/b/id/1260617-M.jpg
+130,The Island of Dr. Moreau,H. G. Wells,Horror Stories,1896,,https://covers.openlibrary.org/b/id/968312-M.jpg
+131,Tales of the Grotesque and Arabesque,Edgar Allan Poe,Horror Stories,1840,,https://covers.openlibrary.org/b/id/8863360-M.jpg
+132,Le fantôme de l'opéra,Gaston Leroux,Horror Stories,1911,,https://covers.openlibrary.org/b/id/8245407-M.jpg
+133,Carrie,Stephen King,Horror Stories,1974,,https://covers.openlibrary.org/b/id/9256043-M.jpg
+134,The Pit and the Pendulum,Edgar Allan Poe,Horror Stories,1907,,https://covers.openlibrary.org/b/id/11872237-M.jpg
+135,Coraline,Neil Gaiman,Horror Stories,2001,,https://covers.openlibrary.org/b/id/14171421-M.jpg
+136,Breaking Dawn,Stephenie Meyer,Horror Stories,2000,,https://covers.openlibrary.org/b/id/12643419-M.jpg
+137,The Masque of the Red Death,Edgar Allan Poe,Horror Stories,1922,,https://covers.openlibrary.org/b/id/11860130-M.jpg
+138,Skeleton crew,Stephen King,Horror Stories,1985,,https://covers.openlibrary.org/b/id/14657166-M.jpg
+139,The Tell-Tale Heart,Edgar Allan Poe,Horror Stories,1958,,https://covers.openlibrary.org/b/id/11851436-M.jpg
+140,Rikki-Tikki-Tavi,Rudyard Kipling,Horror Stories,1893,,https://covers.openlibrary.org/b/id/4123182-M.jpg
+141,The Cask of Amontillado,Edgar Allan Poe,Horror Stories,1846,,https://covers.openlibrary.org/b/id/11887418-M.jpg
+142,Night Shift,Stephen King,Horror Stories,1960,,https://covers.openlibrary.org/b/id/14651337-M.jpg
+143,Semilla del Diablo,Ira Levin,Horror Stories,1900,,https://covers.openlibrary.org/b/id/15054795-M.jpg
+144,Christine,Stephen King,Horror Stories,1983,,https://covers.openlibrary.org/b/id/14655985-M.jpg
+145,La Divina Commedia,Dante Alighieri,Poetry,1472,,https://covers.openlibrary.org/b/id/11621024-M.jpg
+146,Ἰλιάς,Όμηρος,Poetry,1505,,https://covers.openlibrary.org/b/id/7083790-M.jpg
+147,Ὀδύσσεια,Όμηρος,Poetry,1488,,https://covers.openlibrary.org/b/id/9045853-M.jpg
+148,Leaves of Grass,Walt Whitman,Poetry,1855,,https://covers.openlibrary.org/b/id/9000447-M.jpg
+149,The Canterbury Tales,"Geoffrey Chaucer, John E. Cunningham, Peter Ackroyd, Ted Stearn",Poetry,1478,,https://covers.openlibrary.org/b/id/5767180-M.jpg
+150,Sonnets,William Shakespeare,Poetry,1609,,https://covers.openlibrary.org/b/id/8222090-M.jpg
+151,Faust,Johann Wolfgang von Goethe,Poetry,1800,,https://covers.openlibrary.org/b/id/6499459-M.jpg
+152,The Prophet,Kahlil Gibran,Poetry,1900,,https://covers.openlibrary.org/b/id/418324-M.jpg
+153,De rerum natura,Titus Lucretius Carus,Poetry,1486,,https://covers.openlibrary.org/b/id/566208-M.jpg
+154,La Poetica,Aristotle,Poetry,1479,,https://covers.openlibrary.org/b/id/129771-M.jpg
+155,Metamorphoses,Ovid,Poetry,1479,,https://covers.openlibrary.org/b/id/7212118-M.jpg
+156,Aeneis,Publius Vergilius Maro,Poetry,1710,,https://covers.openlibrary.org/b/id/6968564-M.jpg
+157,Flower Fables,Louisa May Alcott,Poetry,1854,,https://covers.openlibrary.org/b/id/755980-M.jpg
+158,Inferno,Dante Alighieri,Poetry,1767,,https://covers.openlibrary.org/b/id/6387077-M.jpg
+159,Paradise Lost,John Milton,Poetry,1667,,https://covers.openlibrary.org/b/id/5992814-M.jpg
+160,The Night Before Christmas,Clement Clarke Moore,Poetry,1857,,https://covers.openlibrary.org/b/id/8236410-M.jpg
+161,Les Trois Mousquetaires,"Alexandre Dumas, Auguste Maquet",Adventure And Adventurers,1844,,https://covers.openlibrary.org/b/id/11929973-M.jpg
+162,The Prince and the Pauper,Mark Twain,Adventure And Adventurers,1881,,https://covers.openlibrary.org/b/id/8221267-M.jpg
+163,The Pilgrim's Progress,John Bunyan,Adventure And Adventurers,1678,,https://covers.openlibrary.org/b/id/8229224-M.jpg
+164,The Scarlet Pimpernel,Emma Orczy,Adventure And Adventurers,1900,,https://covers.openlibrary.org/b/id/479102-M.jpg
+165,The Turn of the Screw,Henry James,Adventure And Adventurers,1898,,https://covers.openlibrary.org/b/id/181493-M.jpg
+166,Lorna Doone,R. D. Blackmore,Adventure And Adventurers,1656,,https://covers.openlibrary.org/b/id/11673413-M.jpg
+167,The Pickwick Papers,Charles Dickens,Adventure And Adventurers,1800,,https://covers.openlibrary.org/b/id/13130696-M.jpg
+168,Allan Quatermain,H. Rider Haggard,Adventure And Adventurers,1887,,https://covers.openlibrary.org/b/id/830243-M.jpg
+169,The Coral Island,"Robert Michael Ballantyne, Ralph Crane, George Dalziel, Edward Dalziel",Adventure And Adventurers,1858,,https://covers.openlibrary.org/b/id/8242206-M.jpg
+170,Ayesha,H. Rider Haggard,Adventure And Adventurers,1900,,https://covers.openlibrary.org/b/id/12640128-M.jpg
+171,Glinda of Oz,L. Frank Baum,Adventure And Adventurers,1920,,https://covers.openlibrary.org/b/id/758814-M.jpg
+172,Kidnapped,Robert Louis Stevenson,Adventure And Adventurers,1886,,https://covers.openlibrary.org/b/id/8267822-M.jpg
+173,She and Allan,"H. Rider Haggard, H. Rider Haggard, H. Rider Haggard",Adventure And Adventurers,1921,,https://covers.openlibrary.org/b/id/1930790-M.jpg
+174,The Devil's Dictionary,Ambrose Bierce,Adventure And Adventurers,1840,,https://covers.openlibrary.org/b/id/12671319-M.jpg
+175,The Age of Fable,Thomas Bulfinch,Adventure And Adventurers,1800,,https://covers.openlibrary.org/b/id/419378-M.jpg
+176,David Balfour,Robert Louis Stevenson,Adventure And Adventurers,1883,,https://covers.openlibrary.org/b/id/8244483-M.jpg
+177,My Ántonia,Willa Cather,American Fiction,1818,,https://covers.openlibrary.org/b/id/8369013-M.jpg
+178,The Yellow Wallpaper,"Charlotte Perkins Gilman, Aric Cushing, Logan Thomas, SparkNotes",American Fiction,1892,,https://covers.openlibrary.org/b/id/652029-M.jpg
+179,The Red Badge of Courage,Stephen Crane,American Fiction,1855,,https://covers.openlibrary.org/b/id/8236915-M.jpg
+180,Herland,"Charlotte Perkins Gilman, Alex Goody, Eva Kumar, Evelynn D. Smith",American Fiction,1915,,https://covers.openlibrary.org/b/id/448130-M.jpg
+181,Jo's Boys,Louisa May Alcott,American Fiction,1886,,https://covers.openlibrary.org/b/id/13166184-M.jpg
+182,Pollyanna,"Eleanor Hodgman Porter, Porter, Neil Reed, Lee Giles",American Fiction,1912,,https://covers.openlibrary.org/b/id/902113-M.jpg
+183,The King in Yellow,Robert W. Chambers,American Fiction,1895,,https://covers.openlibrary.org/b/id/4752788-M.jpg
+184,The House of Seven Gables Readalong,Nathaniel Hawthorne,American Fiction,1851,,https://covers.openlibrary.org/b/id/10956643-M.jpg
+185,Sister Carrie,Theodore Dreiser,American Fiction,1900,,https://covers.openlibrary.org/b/id/9330145-M.jpg
+186,Babbitt,Sinclair Lewis,American Fiction,1922,,https://covers.openlibrary.org/b/id/6376827-M.jpg
+187,The moon and sixpence,William Somerset Maugham,American Fiction,1919,,https://covers.openlibrary.org/b/id/314604-M.jpg
+188,The Narrative of Arthur Gordon Pym,Edgar Allan Poe,American Fiction,1838,,https://covers.openlibrary.org/b/id/7160877-M.jpg
+189,Twice-Told Tales,Nathaniel Hawthorne,American Fiction,1800,,https://covers.openlibrary.org/b/id/10223473-M.jpg
+190,The Titan,Theodore Dreiser,American Fiction,1914,,https://covers.openlibrary.org/b/id/9330147-M.jpg
+191,The Grapes of Wrath,John Steinbeck,American Fiction,1939,,https://covers.openlibrary.org/b/id/12715902-M.jpg
+192,Tender is the Night,F. Scott Fitzgerald,American Fiction,1933,,https://covers.openlibrary.org/b/id/6984433-M.jpg
+193,Bible,Bible,Translations,1200,,https://covers.openlibrary.org/b/id/12707846-M.jpg
+194,Candide,Voltaire,Translations,1746,,https://covers.openlibrary.org/b/id/12736044-M.jpg
+195,Romeo and Juliet,William Shakespeare,Translations,1597,,https://covers.openlibrary.org/b/id/8257991-M.jpg
+196,Decamerone,Giovanni Boccaccio,Translations,1516,,https://covers.openlibrary.org/b/id/6073528-M.jpg
+197,To the Lighthouse,Virginia Woolf,Translations,1927,,https://covers.openlibrary.org/b/id/8231846-M.jpg
+198,Fables,Jean de La Fontaine,Translations,1678,,https://covers.openlibrary.org/b/id/976209-M.jpg
+199,An Arabian tale,"William Beckford, Samuel Henley, Richard Garnett, Samuel Henley",Translations,1786,,https://covers.openlibrary.org/b/id/2997425-M.jpg
+200,Der Ritt der Walkuren,"Richard Wagner, Stewart Spencer, Barry Millington, Jean d' Ariège",Translations,1800,,https://covers.openlibrary.org/b/id/8243672-M.jpg

@@ -1,86 +1,133 @@
 # Bibliothèque personnelle — recommandation de livres (démo académique)
 
-Objectif : illustrer une **recommandation par contenu** (TF–IDF + cosinus) avec une **interface Streamlit** conviviale : catalogue paginé, filtres, panier et page dédiée aux suggestions. **Aucun serveur Flask** : tout s’exécute dans Streamlit + un fichier CSV.
+Objectif : illustrer une **recommandation par contenu** (TF–IDF + cosinus) avec une **interface Streamlit** : catalogue paginé, filtres, panier et page dédiée aux suggestions. **Aucun serveur Flask** : tout tourne avec Streamlit et un fichier CSV.
 
 ---
 
 ## Prérequis
 
 - **Python 3.10+**
-- **`data/books.csv`** doit être présent (**~200 livres** : métadonnées + URL de couverture Open Library). À **conserver dans le dépôt** si vous poussez sur GitHub.
-- Une **connexion Internet** n’est pas nécessaire au calcul des recommandations ; elle sert seulement au navigateur pour **afficher** les images hébergées chez Open Library.
+- Fichier **`data/books.csv`** avec **environ 200 lignes** (colonnes : id, titre, auteur, genre, année, description, url de couverture).  
+  Ce fichier peut être **fourni dans le dépôt** ou **régénéré** (voir ci‑dessous).
+- **Affichage des couvertures** : chaques URL pointe vers **Open Library** ; le navigateur charge les images **si une connexion Internet est disponible** au moment où vous utilisez l’application.
 
 ---
 
-## Installation
+## Installation (nouveau dossier ou clone GitHub)
 
-À la racine du projet :
+Ouvrez un terminal dans le dossier racine du projet (`Recommandation_système`) puis :
+
+### 1. Créer et activer un environnement virtuel
 
 ```bash
 python -m venv .venv
-# Windows
-.\.venv\Scripts\activate
-# macOS / Linux
-# source .venv/bin/activate
+```
 
+**Windows (PowerShell ou CMD)**
+
+```bash
+.\.venv\Scripts\activate
+```
+
+**macOS / Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+### 2. Installer les bibliothèques Python
+
+```bash
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Dépendances (`requirements.txt`)
+### 3. (Re)créer le catalogue **`data/books.csv`**
 
-| Paquet        | Usage principal        |
-|---------------|-------------------------|
-| `streamlit`   | Interface utilisateur   |
-| `pandas`      | Lecture du CSV          |
-| `scikit-learn`| TF–IDF, similarité cosinus |
+À faire **si le CSV est vide, manquant, ou après un problème Git** (pour éviter l’erreur *empty vocabulary* du TF-IDF).
 
----
+- **Connexion Internet obligatoire** pour cet étape.
+- Le script télécharge environ **200 livres** depuis l’API **Open Library**, avec **une couverture par livre**, en **répartissant les entrées entre plusieurs genres / sujets**.
 
-## Lancer l’application
+```bash
+python scripts/fetch_books_ol.py
+```
+
+Vous devez voir un message du type : `200 livres écrits dans ...\data\books.csv`.
+
+Ensuite :
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
+### Dépendances (`requirements.txt`)
+
+| Paquet           | Usage principal                           |
+|------------------|-------------------------------------------|
+| `streamlit`      | Interface utilisateur                     |
+| `pandas`         | Lecture du CSV                            |
+| `scikit-learn`   | TF–IDF et similarité cosinus              |
+| `requests`       | Script optionnel `fetch_books_ol.py`       |
+
+---
+
+## Lancer l’application (installation déjà faite)
+
+```bash
+# activez toujours le venv si besoin :
+# .\.venv\Scripts\activate   (Windows)
+# source .venv/bin/activate  (macOS / Linux)
+
+streamlit run streamlit_app.py
+```
+
+---
+
+## Erreurs fréquentes
+
+| Message / situation | Cause probable | Action |
+|---------------------|----------------|--------|
+| `empty vocabulary` / `ValueError` au chargement | `books.csv` sans données (en-tête seul) | Exécutez `python scripts/fetch_books_ol.py` |
+| Message explicite sur fichier vide (`recommender.py`) | Même chose | Idem |
+| `RemoteDisconnected` / `ConnectionError` pendant le script | Open Library ferme parfois la connexion (charge, réseau) | Réessayez quelques minutes après ; le script retente automatiquement et **ralentit** entre chaque page — un second lancement suffit souvent |
+
+Après avoir remplacé `books.csv`, si Streamlit gardait une vieille version en cache : menu **⚙️ → Clear cached resource**, ou augmentez **`_MOTEUR_CODE_VERSION`** dans `streamlit_app.py`.
+
 ---
 
 ## Utilisation de l’interface
 
-La **barre latérale** propose trois vues (radio **Navigation**) :
+La **barre latérale** propose trois vues (**Navigation**) :
 
 ### Accueil
 
-- En haut : **recherche générale** (recherche dans titre, auteur, genre, description si présente).
-- **Filtres** : auteur (texte « contient »), **genre**, **année** (liste dérivée du CSV).
-- **Pagination** : **20 livres par page**, boutons « Page précédente / suivante ».
-- Pour chaque carte :
-  - **Voir reco** → définit le livre actif et ouvre **Ma sélection** ;
-  - **Au panier** → ajoute le titre à **Mes bouquins** (sans doublon).
+- **Recherche générale**, filtres **auteur**, **genre**, **année**.
+- Pagination **20 livres / page**.
+- **Voir reco** → ouvre **Ma sélection** ; **Au panier** ajoute aux **Mes bouquins**.
 
 ### Mes bouquins
 
-- Liste des livres ajoutés au **panier** (identifiants en session ; la liste est réinitialisée si vous fermez l’onglet / la session).
-- **Reco** sur une ligne → ouvre **Ma sélection** pour ce livre.
-- **Retirer** enlève le titre du panier.
+- Panier (session navigateur).
+- **Reco** / **Retirer**.
 
 ### Ma sélection
 
-- Affiche le **livre choisi** (couverture, métadonnées) et **8 suggestions** similaires (**nombre fixe**, non modifiable dans l’UI).
-- Possibilité d’**ajouter** le livre courant au panier ou d’ouvrir une suggestion (**Voir** → nouvelle sélection + rechargement des recommandations).
+- Livre actif et **8 suggestions** (nombre fixe, `NB_VOISINS`).
 
-### Effets visuels
+### Animations
 
-Une feuille de style injectée dans l’app applique de **légères animations** (fondu à l’entrée de la page principale, léger zoom au survol des couvertures, transitions sur les boutons).
+Léger fondu à l’ouverture, zoom léger au survol des couvertures, transitions sur les boutons dans la zone principale.
 
 ---
 
 ## Comment ça marche ? (algorithme)
 
-1. Chaque livre est représenté par un **texte concaténé** (titre + auteur + genre + description).
-2. **TF–IDF** transforme ces textes en vecteurs creux.
-3. La **similarité cosinus** entre le livre sélectionné et les autres produit un classement ; on garde les **8 meilleurs** (`NB_VOISINS` dans `streamlit_app.py`).
+1. Texte concaténé par livre : titre, auteur, genre, description.
+2. **TF–IDF** → vecteurs.
+3. **Similarité cosinus** → liste des voisins (**8** retenus par défaut).
 
-**Limite pédagogique** : pas de filtrage collaboratif (pas de profils utilisateurs ni de matrices de notes utilisateur × livre). Les suggestions sont uniquement « proches du texte » du livre courant.
+Pas de **filtrage collaboratif** (pas de préférences utilisateur ni de grades collectifs dans ce prototype).
 
 ---
 
@@ -88,26 +135,21 @@ Une feuille de style injectée dans l’app applique de **légères animations**
 
 | Fichier / dossier | Rôle |
 |-------------------|------|
-| `data/books.csv` | Catalogue (~200 lignes + couvertures) |
-| `recommender.py` | Classe `LivreRecommender` : lecture CSV, `filtrer`, `annees_disponibles`, `genres_distincts`, `recommander` |
-| `streamlit_app.py` | Navigation, filtres, panier, pagination, reco, CSS animations |
-| `requirements.txt` | Dépendances Python |
-| `.gitignore` | Fichiers locaux à ne pas pousser (ex. `.venv`) |
-
----
-
-## Cache Streamlit (`@st.cache_resource`)
-
-Le chargeur CSV / modèle TF–IDF est mis en cache avec une signature **`(date de modification de books.csv, version code)`**. Si vous modifiez `recommender.py` et voyez des incohérences, **incrémentez `_MOTEUR_CODE_VERSION`** dans `streamlit_app.py` ou utilisez le menu Streamlit : **⚙️ Caches → Clear cached resource**.
+| `data/books.csv` | Catalogue + URLs de couvertures |
+| `scripts/fetch_books_ol.py` | Régénérer ~200 livres variés depuis Open Library |
+| `recommender.py` | `LivreRecommender` : lecture CSV, filtres, recommandations |
+| `streamlit_app.py` | Application Streamlit complète |
+| `requirements.txt` | Dépendances |
+| `.gitignore` | Exclusion de `.venv`, etc. |
 
 ---
 
 ## GitHub — avant un `push`
 
-- Inclure **`data/books.csv`** si vous voulez que le projet soit cloné et fonctionnel tout de suite.
-- Ne **pas** commiter `.venv/` (normalement ignoré via `.gitignore`).
-- Une fois poussé, les instructions **Installation** + **Lancer l’application** suffisent à reproduire l’environnement.
+- Inclure **`data/books.csv`** si vous voulez un projet **fonctionnel sans relancer le script** après clone.
+- Ne **pas** versionner `.venv/`.
+- Indiquez dans le README / rapport que **`fetch_books_ol.py`** permet de **réparer** ou **réinitialiser** le jeu de données.
 
 ---
 
-*Les URLs de couvertures pointent vers les serveurs publics d’**Open Library** ; respectez leurs conditions d’usage hors cadre strictement personnel ou pédagogique.*
+*Les couvertures sont servies par les serveurs publics d’**Open Library** ; respectez leurs conditions d’usage.*

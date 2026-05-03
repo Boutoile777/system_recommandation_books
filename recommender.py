@@ -17,6 +17,11 @@ class LivreRecommender:
     def __init__(self, csv_path: Path | None = None) -> None:
         chemin = csv_path or DATA
         self.df = pd.read_csv(chemin, encoding="utf-8")
+        if self.df.empty:
+            raise ValueError(
+                f"Le fichier {chemin} ne contient aucune ligne de données après l’en-tête. "
+                "Exécutez : python scripts/fetch_books_ol.py (connexion Internet requise)."
+            )
         self.df["id"] = self.df["id"].astype(int)
         if "couverture_url" not in self.df.columns:
             self.df["couverture_url"] = ""
