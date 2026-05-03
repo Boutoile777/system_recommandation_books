@@ -109,5 +109,3 @@ Le chargeur CSV / modèle TF–IDF est mis en cache avec une signature **`(date 
 - Une fois poussé, les instructions **Installation** + **Lancer l’application** suffisent à reproduire l’environnement.
 
 ---
-
-*Les URLs de couvertures pointent vers les serveurs publics d’**Open Library** ; respectez leurs conditions d’usage hors cadre strictement personnel ou pédagogique.*
